@@ -1,4 +1,3 @@
-````markdown
 # 🧠 AI Interviewer Bot
 
 The **AI Interviewer Bot** is a Streamlit-based web application designed to simulate a technical interview experience. Upload your resume and job description, and the bot will generate personalized interview questions, record your audio responses, evaluate them, and store the data for review.
@@ -94,6 +93,4 @@ This app stores sensitive data like audio and evaluation results. Use responsibl
 ## 📬 Contact
 
 Created by \[Prathamesh] – feel free to reach out or contribute!
-
-```
 
