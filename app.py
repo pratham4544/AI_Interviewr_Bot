@@ -18,6 +18,11 @@ load_dotenv()
 st.set_page_config(page_title="AI Interviewer Bot", layout="wide")
 st.title("AI Interviewer Bot")
 
+# Capture photo once at app start
+image_data = st.camera_input("Camera Verification (face photo will be saved)")
+if image_data:
+    st.session_state.user_image_bytes = image_data.getvalue()
+
 # Initialize session state if not already done
 if 'interview_assistant' not in st.session_state:
     st.session_state.interview_assistant = None
@@ -173,7 +178,8 @@ if st.session_state.files_processed:
                             question=current_question,
                             answer_text=st.session_state.answer_text,
                             evaluation=st.session_state.evaluation_result,
-                            audio_data=audio_bytes
+                            audio_data=audio_bytes,
+                            photo_data=st.session_state.get("user_image_bytes") 
                             )
         
         # Display transcription and evaluation
