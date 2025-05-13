@@ -1,7 +1,3 @@
-Here’s a **basic `README.md`** file for your AI Interviewer Bot Streamlit app project. You can expand it later to include images, example outputs, or deployment instructions.
-
----
-
 ````markdown
 # 🧠 AI Interviewer Bot
 
@@ -97,11 +93,7 @@ This app stores sensitive data like audio and evaluation results. Use responsibl
 
 ## 📬 Contact
 
-Created by \[Your Name] – feel free to reach out or contribute!
+Created by \[Prathamesh] – feel free to reach out or contribute!
 
 ```
 
----
-
-Let me know if you want a version with screenshots, deployment instructions (e.g. Streamlit Cloud, Docker), or usage tips!
-```
